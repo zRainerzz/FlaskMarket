@@ -38,6 +38,7 @@
         border: 1px solid #444;
         padding: 10px;
         text-align: center;
+        vertical-align: middle;
     }
 
     th {
@@ -56,13 +57,16 @@
 
     .btn {
         padding: 10px 20px;
-        margin: 5px;
         font-size: 14px;
         font-weight: bold;
         border: 2px solid transparent;
         border-radius: 5px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
+        width: 150px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
     }
 
     .btn-outline {
@@ -95,6 +99,12 @@
         outline: none;
         box-shadow: 0 0 5px white;
     }
+
+    td > div {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
 </style>
 <body>
     <div class="box">
@@ -119,8 +129,10 @@
                     <td>{{ item.barcode }}</td>
                     <td>{{ item.price }}</td>
                     <td>
-                        <button class='btn btn-outline btn-info'>More Info</button>
-                        <button class='btn btn-outline btn-success'>Purchase This {{ item.name }}</button>
+                        <div>
+                            <button class='btn btn-outline btn-info'>More Info</button>
+                            <button class='btn btn-outline btn-success'>Purchase</button>
+                        </div>
                     </td>
                 </tr>
             {% endfor %}
