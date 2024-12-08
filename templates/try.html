@@ -7,49 +7,123 @@
     <title>Document</title>
 </head>
 <style>
-    .box{
-        width: 100%;
-        background-color: goldenrod;
-        padding: 20px;
-    }
-    body{
+    body {
         background-color: black;
         color: white;
         padding: 0;
         margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .box {
+        width: 100%;
+        background-color: goldenrod;
+        padding: 20px;
+    }
+
+    nav {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+    }
+
+    table {
+        width: 90%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #444;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: goldenrod;
+        color: black;
+        font-weight: bold;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #222;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #333;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-outline {
+        background: transparent;
+        color: white;
+        border-color: white;
+    }
+
+    .btn-info {
+        border-color: #17a2b8;
+        color: #17a2b8;
+    }
+
+    .btn-info:hover {
+        background-color: #17a2b8;
+        color: black;
+    }
+
+    .btn-success {
+        border-color: #28a745;
+        color: #28a745;
+    }
+
+    .btn-success:hover {
+        background-color: #28a745;
+        color: black;
+    }
+
+    .btn:focus {
+        outline: none;
+        box-shadow: 0 0 5px white;
     }
 </style>
 <body>
     <div class="box">
-        <nav >thisi is my navigation</nav>
+        <nav>this is my navigation</nav>
     </div>
     <h1>Market Table</h1>
     <table>
         <thead>
             <tr>
-                <!--Columns Here-->
                 <th scope='col'>ID</th>
                 <th scope='col'>Name</th>
-                <th scope='col'>Barecode</th>
+                <th scope='col'>Barcode</th>
                 <th scope='col'>Price</th>
-                <th scope= 'col'>Options</th>
+                <th scope='col'>Options</th>
             </tr>
         </thead>
-
         <tbody>
-            {%for item in items%}
+            {% for item in items %}
                 <tr>
-                    <td>{{item.id}}</td>
-                    <td>{{item.name}}</td>
-                    <td>{{item.barecode}}</td>
-                    <td>{{item.price}}</td>
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.barcode }}</td>
+                    <td>{{ item.price }}</td>
                     <td>
                         <button class='btn btn-outline btn-info'>More Info</button>
-                        <button class='btn btn-outline btn-success'>Purchase This {{item.name}} .</button>
+                        <button class='btn btn-outline btn-success'>Purchase This {{ item.name }}</button>
                     </td>
                 </tr>
-            {%endfor%}
-
+            {% endfor %}
         </tbody>
     </table>
 </body>
