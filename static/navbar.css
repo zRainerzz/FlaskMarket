@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar ul{
+    list-style: none;
+    background: #EEE;
+    padding: 0;
+    margin: 0;
+}
+.navbar li{
+    display: inline-block;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(212, 6, 6);
+    text-transform: uppercase;
+    display: block;
+}
+a{float: right;}
+nav{background-color: #EEE;
+height: 60%;}
+ 
+img{float: left;}

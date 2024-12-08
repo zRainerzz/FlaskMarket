@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+    background-image: url(../static/images/cam.gif);
+    background-size: cover;
+}
+h1{ color: red;
+    text-align: center;
+    text-decoration: double;
+}
+legend{color: yellow;
+    text-decoration-style: double;
+    text-shadow: darkblue;
+}
+i{width: 30%;}
+label{color: white;}
+img{
+    width: 20%;
+    display: block;
+    margin: 0px auto;
+}
+b{margin-left: 25%;}
+
+span{
+    justify-content: center;
+    display: flex;
+    margin-top: 10%;
+    
+}
+fieldset{
+    background-image: url(../static/images/yy.jpg);
+    width: 50%;
+    height: 100%;
+    align-content: center;
+    background-size: cover;
+    margin-left: 25%;
+}
+
+
+div{
+    margin-top: 10%;
+    display: block;
+}
+span{
+    align-content: center;
+    align-self: center;
+}

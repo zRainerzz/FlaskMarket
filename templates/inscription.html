@@ -1,0 +1,63 @@
+<!doctype html:5>
+<html>
+<head>
+
+    <meta charset="UTF-8"/>
+    <title>inscrit vous</title>
+    <meta name="discription" content="this is my first page"/> 
+    <link rel="stylesheet" href="../static/login.css" />
+</head>
+<body>
+    <header>
+        <h1>Fc Barcelona</h1> 
+    </header>
+    <fieldset>
+
+        <legend><i>Inscrit Vous</i></legend>
+        <form>
+        <div>
+            <label>Your Name</label>
+            <input type="text" required placeholder="ecrire votre nom">
+            <b>
+                <label for="h">Homme</label>
+                <input type="radio" id="h" name="genre" value="Homme">
+                <label for="f">Femme</label>
+                <input type="radio" id="f" name="genre" value="Femme"> 
+            </b>
+        </div>
+        <div>
+            <label>Choose a Username</label>
+            <input type="text" required placeholder="ecrire votre prenom">
+          
+        </div>
+        <div>
+            <label >Email</label>
+            <input type="email" required placeholder="username@email.com">
+
+        </div>
+        <div>
+            <label for="a">date of brith</label>
+            <input type="date" id="a">
+        </div>
+        <div>
+            <label>Creat Password</label>
+            <input type="password" required placeholder="your password" minlength="8">
+        </div>
+        <div>
+       
+        </div>
+        <div>
+            <label>Confirme Your Password</label>
+            <input type="password" required placeholder="confirme votre password">
+        </div> 
+            <span>  
+            <input type="submit" value="save" >
+            <input type="reset" value="Effacé">
+            </span> 
+        </form>
+        <script>
+            import { App } from './static/logo.js';
+            App();
+        </script>
+
+    </fieldset>

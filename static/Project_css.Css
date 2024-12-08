@@ -1,0 +1,139 @@
+body {
+    padding: 80px 0 0 0;
+    color: white;
+    font-weight: 600;
+    background-size: cover;
+    background-image: url(https://media.istockphoto.com/id/1168591951/photo/sport-backgrounds-soccer-stadium-soccer-ball-on-stadium-football-poster.jpg?s=1024x1024&w=is&k=20&c=LtgT3_1ny9Qu1lIsg2zg-giNauEHn308HuxV0bSx2fY=);
+}
+
+img {
+    height: 80%;
+    transform: translateX(10px);
+    width: 10%;
+}
+
+marquee {
+    color: rgb(116, 253, 89);
+    font-size: 26px;
+    letter-spacing: 6px;
+    font-weight: 600;
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+.head_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 20px);
+    height: 65px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: solid 1px #777;
+}
+
+ul {
+    list-style-type: none;
+
+    display: flex;
+    width: fit-content;
+}
+
+li a {
+    color: #b6b6b6;
+    width: 100%;
+    padding: 10px;
+}
+
+li:hover a {
+    color: rgb(65, 65, 34);
+}
+
+li {
+    margin: 0 10px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.45rem;
+
+}
+
+li:hover {
+    background-color: rgb(122, 120, 120);
+    box-shadow: 0px 0px 10px 8px rgb(122, 120, 120);
+}
+
+h1 {
+    color: rgb(20, 238, 20);
+    text-align: center;
+}
+
+
+
+
+
+table {
+    text-align: center;
+    border: black;
+    width: 100%;
+}
+
+th {
+    /*color: red;*/
+    font-weight: 600;
+    color: rgb(238, 0, 226);
+}
+
+td {
+    /*color:rgb(255, 255, 0);*/
+    color: yellow;
+    font-weight: 600;
+}
+
+h2 {
+    color: red;
+    text-shadow: 7px;
+    text-shadow: black;
+
+}
+
+h3 {
+    color: red;
+    text-align: center;
+}
+
+.cup {
+    display: block;
+    margin: 0% auto;
+    width: 27%;
+}
+
+.fot {
+    list-style-type: none;
+    color: gray;
+}
+
+.copyright {
+    text-align: center;
+    color: darkkhaki;
+}
+
+footer {
+    background-color: black;
+    height: 50%;
+    width: 100%;
+}

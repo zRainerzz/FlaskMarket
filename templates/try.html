@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 100%;
+        background-color: goldenrod;
+        padding: 20px;
+    }
+    body{
+        background-color: black;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+</style>
+<body>
+    <div class="box">
+        <nav >thisi is my navigation</nav>
+    </div>
+    <h1>Market Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <!--Columns Here-->
+                <th scope='col'>ID</th>
+                <th scope='col'>Name</th>
+                <th scope='col'>Barecode</th>
+                <th scope='col'>Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {%for item in items%}
+                <tr>
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.barecode}}</td>
+                    <td>{{item.price}}</td>
+                </tr>
+            {%endfor%}
+
+        </tbody>
+    </table>
+</body>
+</html>
